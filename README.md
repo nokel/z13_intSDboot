@@ -1,3 +1,5 @@
 Format an SD card as fat32 (you can do the whole thing, but you only need 128mb max) and put this EFI file in the correct order ("EFI" and inside EFI, "BOOT") you should be able to chain load the OS located on the internal SD card.
 
 Please note that this will likely only work if the SD card can already boot by itself if used in a USB reader... I've only tested this chainlauncher with steamOS (hence the steam logo), but it's supposed to look for any OS on the internal SD card reader.
+
+One thing I've noted when attempting to boot SteamOS from the SD card (and I don't know if it's just the card, or the reader, or both), but it can be really slow when it's booting into the steam gui (game mode, going into desktop mode doesn't have any slowdown), but when it's running it seems to work fine... The easiest way to tell if it's still working is if the caps light turns on when you press the caps key... ctrl + alt + 4 will also tell show you the terminal and it'll still load steamOS when it's ready, but if none of that shows up you've probably got a failed boot...
